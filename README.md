@@ -1,24 +1,28 @@
 # ui-demo
 
-## Project setup
-```
-npm install
+## 使用
+
+```bash
+npm i demo-ui
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 组件
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### 按钮（Button）
 
-### Lints and fixes files
-```
-npm run lint
-```
+- 属性
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+| 参数名   | 参数描述                                                | 参数类型 | 默认值  |
+| -------- | ------------------------------------------------------- | -------- | ------- |
+| type     | 按钮类型（primary / success / warning / danger / info） | String   | default |
+| plain    | 是否是朴素按钮                                          | Boolean  | false   |
+| round    | 是否是圆角按钮                                          | Boolean  | false   |
+| circle   | 是否是原型按钮                                          | Boolean  | false   |
+| disabled | 是否禁用状态                                            | Boolean  | false   |
+| icon     | 图标类名                                                | String   | 无      |
+
+- 事件
+
+| 事件  | 描述     | 参数类型 |
+| ----- | -------- | -------- |
+| click | 点击事件 | Function |
