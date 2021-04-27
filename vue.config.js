@@ -2,12 +2,12 @@ const path = require('path')
 function resolve(dir) {
   return path.join(__dirname, dir)
 }
-const port = 9999
+const port = process.env.port || 9999
 module.exports = {
-  publicPath: '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/demo-ui/dist/' : '/',
   outputDir: 'dist',
   assetsDir: 'static',
-  lintOnSave: false,
+  lintOnSave: process.env.NODE_ENV === 'development',
   productionSourceMap: false,
   devServer: {
     port: port,
