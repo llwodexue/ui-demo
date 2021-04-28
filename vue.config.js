@@ -4,7 +4,7 @@ function resolve(dir) {
 }
 const port = process.env.port || 9999
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/demo-ui/dist/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '' : '',
   outputDir: 'dist',
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development',
