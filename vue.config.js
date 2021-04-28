@@ -19,8 +19,7 @@ module.exports = {
         alias: {
           '@': resolve('src'),
           '@c': resolve('src/components'),
-          '@v': resolve('src/views'),
-          '@s': resolve('src/styles')
+          '@v': resolve('src/views')
         }
       }
     })
